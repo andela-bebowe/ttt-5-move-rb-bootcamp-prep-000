@@ -5,7 +5,6 @@ describe './bin/move executing a CLI Application' do
     allow($stdout).to receive(:puts)
     allow(self).to receive(:gets).and_return("1")
     allow(self).to receive(:move)
-    puts "here"
 
     board = get_variable_from_file("./bin/move", "board")
 
